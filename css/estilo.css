@@ -15,7 +15,7 @@ main{
 a {
 	text-decoration: none;
 }
-a:hover {
+li a:hover {
 	background-color: yellow;
 }
 h1 {
@@ -72,6 +72,10 @@ header{
 }
 footer{
 	grid-area: footer;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
 }
 header, footer{
 	background-image: url(../assets/img/bgFlowerBlue.png);
@@ -151,12 +155,18 @@ textarea {
 }
 .ml15{margin: 15px;}
 
+.iconoRRSS{
+	width: 30px;
+	margin: 20px;
+
+}
+
 @media only screen and (max-width: 768px){
 	.gridContenedor{
 		display: flex;
 		flex-direction: column;
 	}
-	header,footer{
+	header{
 		flex-direction: column;
 		background-image: url(../assets/img/bgFlowerWhite.png);
 		background-repeat: repeat -x;
@@ -193,6 +203,7 @@ textarea {
 		color: #c0c0c0;
 	}
 }
+
 	
 /*
 .bgColor {	
